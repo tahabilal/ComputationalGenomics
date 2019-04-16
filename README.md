@@ -1,1 +1,1 @@
-# ComputationalGenomics
+# Computational Genomics - CSE 4065
