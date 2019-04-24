@@ -57,7 +57,7 @@ def randomized_motif_search(randomMotif,a):
 
 def calculate_score(transpose_motif, consensus,a):
     score = 0
-    for j in range(10):
+    for j in range(a):
         for i in range(a):
             if transpose_motif[j][i].upper() != consensus[j]:
                 score += 1
