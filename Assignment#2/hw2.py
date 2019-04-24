@@ -1,27 +1,39 @@
-
 from random import randint
 import numpy as np 
 
+# We take an input file name 
 input_text = input("Enter a file: ")
+# If no input file name is given execute the dna_sample.txt file in the project directory
 if len(input_text) < 1 : input_text = "dna_sample.txt"
-Text = open(input_text)
+try:
+    Text = open(input_text)
+except:
+    print("Given File Not Found")
+    exit(1)
+
+# Text array contains the 10 DNA Strings
 Text = Text.read().split()
 
-
+# We ask for a number for the k value. Which is the number of mers.
 k = int(input("Enter k: "))
 
+# random_motif function returns a array of random motifs
 def random_motif(a):
     motifs = []
+    # we have 10 dna_strings for every string we choose a random index and take the next 
+    # a characters to contruct each motif.
     for i in range(0,10):
         y = randint(0, 500-a)
         motifs.append(Text[i][y:y+a])
     return motifs
 
-
+# this function executes random motif search algorithm on given randomMotifs and motif length (a)
 def randomized_motif_search(randomMotif,a): 
+    # first create empty arrays for each nucleotide
     A, C, G, T = [], [], [], []
     consensus = ""
-    transpose_motif = [" "," "," "," "," "," "," "," "," "," "," "]
+    transpose_motif = [""]*a
+
     for j in range(a):
         countA, countC, countG, countT = 0, 0, 0, 0
         for i in range(10):
@@ -58,7 +70,7 @@ def randomized_motif_search(randomMotif,a):
 def calculate_score(transpose_motif, consensus,a):
     score = 0
     for j in range(a):
-        for i in range(a):
+        for i in range(10):
             if transpose_motif[j][i].upper() != consensus[j]:
                 score += 1
     return score
@@ -71,7 +83,6 @@ def calculate_new_motifs(profile_matrix, Text,a):
     updated_motifs = []
     index = 0
     for j in range(10):
-    
         for i in range(len(Text[j])-a):
             if i+a > (500):
                 break
@@ -139,7 +150,7 @@ def calculate_new_motifs_gibbs(profile_matrix, Text, index, randomMotif,a):  # n
 
 def construct_consensus(randomMotif,a):  # new method for gibbs sampler
     consensus = ""
-    transpose_motif = [" "," "," "," "," "," "," "," "," "," "," "]
+    transpose_motif = [""]*a
     for j in range(a):
         countA, countC, countG, countT = 0, 0, 0, 0
         for i in range(10):
