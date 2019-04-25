@@ -1,0 +1,66 @@
+Enter a file: 
+
+Enter k: 9
+
+Menu
+1-Randomized Motif Search
+2-Gibbs Sampler
+
+Enter your choice: 1
+
+['TGTACACGC', 'ccgccatgc', 'gggaacgtg', 'ccaatgccc', 'ggccaatga', 'gatgaacat', 'ggacatcgc', 'cggacagca', 'aacttccat', 'gggaatggt']
+[[0.11111111 0.22222222 0.22222222 0.55555556 0.55555556 0.55555556
+  0.         0.22222222 0.22222222]
+ [0.33333333 0.22222222 0.22222222 0.33333333 0.33333333 0.22222222
+  0.55555556 0.22222222 0.44444444]
+ [0.55555556 0.66666667 0.44444444 0.11111111 0.         0.11111111
+  0.33333333 0.55555556 0.11111111]
+ [0.11111111 0.         0.22222222 0.11111111 0.22222222 0.22222222
+  0.22222222 0.11111111 0.33333333]]
+Consensus String: GGGAAACGC
+Score: 46
+[[0.         0.11111111 0.44444444 0.55555556 1.         0.66666667
+  0.         0.11111111 0.11111111]
+ [0.33333333 0.11111111 0.11111111 0.55555556 0.11111111 0.11111111
+  0.66666667 0.         0.44444444]
+ [0.77777778 0.88888889 0.44444444 0.         0.         0.
+  0.22222222 1.         0.        ]
+ [0.         0.         0.11111111 0.         0.         0.33333333
+  0.22222222 0.         0.55555556]]
+Consensus String: GGAAAACGT
+Score: 31
+[[0.         0.11111111 0.44444444 0.44444444 1.         0.66666667
+  0.         0.11111111 0.11111111]
+ [0.44444444 0.         0.22222222 0.66666667 0.11111111 0.
+  0.55555556 0.         0.33333333]
+ [0.66666667 1.         0.33333333 0.         0.         0.
+  0.22222222 1.         0.        ]
+ [0.         0.         0.11111111 0.         0.         0.44444444
+  0.33333333 0.         0.66666667]]
+Consensus String: GGACAACGT
+Score: 30
+
+---- Results ----
+Algorithm executed in 3 iterations
+
+Final Motifs:
+cggcaatgt
+ggacatcgc
+cggcaacga
+cgccattgt
+ggtaaatgt
+ggaaaacat
+ggacatcgc
+cgcccAGGT
+gaaaaacgc
+gggaatggt
+
+Consensus String:
+GGACAACGT
+
+Final Score:
+30
+
+Enter your choice: 
+
+Terminated

@@ -1,0 +1,862 @@
+Enter a file: 
+
+Enter k: 11
+
+Menu
+1-Randomized Motif Search
+2-Gibbs Sampler
+
+Enter your choice: 2
+
+['aggcctccatt', 'acctgcttcta', 'ctgagagggga', 'cgattgtgcta', 'AAttgcttagc', 'cctctctcgtc', 'tgcggactata', 'ctaactcaaga', 'tggacgtagat', 'TAActtacttg']
+CGAAGCTCATA
+[[0.36363636 0.27272727 0.36363636 0.36363636 0.09090909 0.27272727
+  0.18181818 0.27272727 0.45454545 0.18181818 0.54545455]
+ [0.36363636 0.18181818 0.27272727 0.27272727 0.36363636 0.27272727
+  0.36363636 0.27272727 0.27272727 0.09090909 0.18181818]
+ [0.09090909 0.45454545 0.36363636 0.18181818 0.45454545 0.27272727
+  0.18181818 0.27272727 0.27272727 0.36363636 0.18181818]
+ [0.36363636 0.27272727 0.18181818 0.36363636 0.27272727 0.36363636
+  0.45454545 0.36363636 0.18181818 0.54545455 0.27272727]]
+Consensus String: CGAAGCTCATA
+Score: 66
+-----------------
+Updated Motifs:
+-----------------
+aggcctccatt
+acctgcttcta
+ctgagagggga
+cgattgtgcta
+AAttgcttagc
+caatctccgtt
+tgcggactata
+ctaactcaaga
+tggacgtagat
+TAActtacttg
+
+
+CGATCTCCATA
+[[0.36363636 0.36363636 0.36363636 0.36363636 0.09090909 0.27272727
+  0.18181818 0.27272727 0.45454545 0.18181818 0.45454545]
+ [0.36363636 0.18181818 0.27272727 0.27272727 0.45454545 0.27272727
+  0.45454545 0.36363636 0.18181818 0.09090909 0.18181818]
+ [0.09090909 0.36363636 0.36363636 0.18181818 0.45454545 0.18181818
+  0.18181818 0.18181818 0.36363636 0.36363636 0.18181818]
+ [0.36363636 0.27272727 0.18181818 0.36363636 0.18181818 0.45454545
+  0.36363636 0.36363636 0.18181818 0.54545455 0.36363636]]
+Consensus String: CGATCTCCATA
+Score: 64
+-----------------
+Updated Motifs:
+-----------------
+aggcctccatt
+acctgcttcta
+ctgagagggga
+gtgctagtggg
+AAttgcttagc
+caatctccgtt
+tgcggactata
+ctaactcaaga
+tggacgtagat
+TAActtacttg
+
+
+AAGACTCTATA
+New Score calculated as: 68 
+The Score didn't improved since last 1
+CGGAGTCTGGA
+New Score calculated as: 64 
+The Score didn't improved since last 2
+CCGAGTCTGTA
+[[0.27272727 0.18181818 0.27272727 0.36363636 0.09090909 0.36363636
+  0.09090909 0.27272727 0.36363636 0.27272727 0.45454545]
+ [0.45454545 0.27272727 0.27272727 0.36363636 0.45454545 0.18181818
+  0.45454545 0.27272727 0.18181818 0.09090909 0.18181818]
+ [0.18181818 0.36363636 0.54545455 0.18181818 0.45454545 0.18181818
+  0.36363636 0.18181818 0.54545455 0.36363636 0.18181818]
+ [0.27272727 0.36363636 0.09090909 0.27272727 0.18181818 0.45454545
+  0.27272727 0.45454545 0.09090909 0.45454545 0.36363636]]
+Consensus String: CCGAGTCTGTA
+Score: 59
+-----------------
+Updated Motifs:
+-----------------
+aggcctccatt
+acctgcttcta
+ctgagagggga
+gtgctagtggg
+ccgacatgcaa
+caatctccgtt
+tgcggactata
+ctaactcaaga
+tggacgtagat
+ccgcgtgtgac
+
+
+CCGACACTGTA
+New Score calculated as: 61 
+The Score didn't improved since last 1
+CTGACTCCGGA
+[[0.18181818 0.18181818 0.27272727 0.36363636 0.09090909 0.36363636
+  0.09090909 0.27272727 0.36363636 0.36363636 0.36363636]
+ [0.45454545 0.27272727 0.18181818 0.36363636 0.54545455 0.09090909
+  0.54545455 0.36363636 0.18181818 0.09090909 0.18181818]
+ [0.18181818 0.36363636 0.63636364 0.27272727 0.36363636 0.18181818
+  0.27272727 0.18181818 0.54545455 0.36363636 0.27272727]
+ [0.36363636 0.36363636 0.09090909 0.18181818 0.18181818 0.54545455
+  0.27272727 0.36363636 0.09090909 0.36363636 0.36363636]]
+Consensus String: CTGACTCCGGA
+Score: 58
+-----------------
+Updated Motifs:
+-----------------
+aggcctccatt
+ttgggtccggg
+CTCCGTTAgga
+gtgctagtggg
+ccgacatgcaa
+caatctccgtt
+tgcggactata
+ctaactcaaga
+tggacgtagat
+ccgcgtgtgac
+
+
+CTGCCTCAGGA
+New Score calculated as: 58 
+The Score didn't improved since last 1
+CTGCGTCTGGA
+[[0.18181818 0.18181818 0.27272727 0.27272727 0.09090909 0.36363636
+  0.09090909 0.27272727 0.36363636 0.27272727 0.45454545]
+ [0.54545455 0.27272727 0.27272727 0.45454545 0.45454545 0.09090909
+  0.54545455 0.36363636 0.18181818 0.09090909 0.18181818]
+ [0.18181818 0.27272727 0.54545455 0.27272727 0.45454545 0.09090909
+  0.27272727 0.18181818 0.54545455 0.45454545 0.27272727]
+ [0.27272727 0.45454545 0.09090909 0.18181818 0.18181818 0.63636364
+  0.27272727 0.36363636 0.09090909 0.36363636 0.27272727]]
+Consensus String: CTGCGTCTGGA
+Score: 53
+-----------------
+Updated Motifs:
+-----------------
+aggcctccatt
+ttgggtccggg
+CTCCGTTAgga
+gtgctagtggg
+ccgacatgcaa
+caatctccgtt
+tgcggactata
+ctaactcaaga
+atacttcgggt
+ccgcgtgtgac
+
+
+CTGCCTCCGGA
+New Score calculated as: 55 
+The Score didn't improved since last 1
+CTGCCTCAGGA
+New Score calculated as: 55 
+The Score didn't improved since last 2
+CTGACTCAAGA
+New Score calculated as: 56 
+The Score didn't improved since last 3
+ATACGTCAAGA
+New Score calculated as: 54 
+The Score didn't improved since last 4
+CTGCGTCAAGA
+[[0.18181818 0.09090909 0.36363636 0.27272727 0.09090909 0.27272727
+  0.18181818 0.54545455 0.45454545 0.27272727 0.54545455]
+ [0.45454545 0.18181818 0.27272727 0.54545455 0.27272727 0.09090909
+  0.45454545 0.18181818 0.18181818 0.09090909 0.18181818]
+ [0.18181818 0.18181818 0.45454545 0.27272727 0.45454545 0.09090909
+  0.36363636 0.09090909 0.45454545 0.54545455 0.36363636]
+ [0.36363636 0.72727273 0.09090909 0.09090909 0.36363636 0.72727273
+  0.18181818 0.36363636 0.09090909 0.27272727 0.09090909]]
+Consensus String: CTGCGTCAAGA
+Score: 51
+-----------------
+Updated Motifs:
+-----------------
+gaggggttaga
+ttgggtccggg
+CTCCGTTAgga
+gtgctagtggg
+ttacttaacta
+ataactcaagg
+tgcggactata
+ctaactcaaga
+ctgcttgaaaa
+ccgcgtgtgac
+
+
+CTGCGTCAAGA
+New Score calculated as: 51 
+The Score didn't improved since last 1
+CTGCGTCAAGA
+New Score calculated as: 52 
+The Score didn't improved since last 2
+ATACGTCAAGA
+New Score calculated as: 55 
+The Score didn't improved since last 3
+ATACCTCAAGA
+New Score calculated as: 57 
+The Score didn't improved since last 4
+CTGCGACAAGA
+New Score calculated as: 57 
+The Score didn't improved since last 5
+TTCCGACAATA
+New Score calculated as: 55 
+The Score didn't improved since last 6
+CTGCGACAATA
+New Score calculated as: 54 
+The Score didn't improved since last 7
+CTACGTAAATA
+[[0.27272727 0.36363636 0.36363636 0.18181818 0.27272727 0.45454545
+  0.36363636 0.72727273 0.36363636 0.18181818 0.90909091]
+ [0.36363636 0.09090909 0.36363636 0.54545455 0.27272727 0.09090909
+  0.36363636 0.09090909 0.36363636 0.09090909 0.09090909]
+ [0.09090909 0.18181818 0.27272727 0.18181818 0.45454545 0.09090909
+  0.18181818 0.09090909 0.27272727 0.27272727 0.09090909]
+ [0.45454545 0.54545455 0.18181818 0.27272727 0.18181818 0.54545455
+  0.27272727 0.27272727 0.18181818 0.63636364 0.09090909]]
+Consensus String: CTACGTAAATA
+Score: 50
+-----------------
+Updated Motifs:
+-----------------
+ctgcataatta
+aattcactata
+CTCCGTTAgga
+ttacgtaagta
+ttacttaacta
+tagcgatacaa
+tgcggactata
+ctaactcaaga
+ttagaaaacta
+aactaagacta
+
+
+TTACGAAACTA
+[[0.27272727 0.36363636 0.36363636 0.18181818 0.27272727 0.45454545
+  0.36363636 0.72727273 0.36363636 0.18181818 0.90909091]
+ [0.36363636 0.09090909 0.36363636 0.54545455 0.27272727 0.09090909
+  0.36363636 0.09090909 0.36363636 0.09090909 0.09090909]
+ [0.09090909 0.18181818 0.27272727 0.18181818 0.45454545 0.09090909
+  0.18181818 0.09090909 0.27272727 0.27272727 0.09090909]
+ [0.45454545 0.54545455 0.18181818 0.27272727 0.18181818 0.54545455
+  0.27272727 0.27272727 0.18181818 0.63636364 0.09090909]]
+Consensus String: TTACGAAACTA
+Score: 48
+-----------------
+Updated Motifs:
+-----------------
+ctgcataatta
+aattcactata
+CTCCGTTAgga
+ttacgtaagta
+ttacttaacta
+tagcgatacaa
+tgcggactata
+ctaactcaaga
+ctgcttgaaaa
+aactaagacta
+
+
+CTACGTAAATA
+New Score calculated as: 50 
+The Score didn't improved since last 1
+TTACGACAATA
+New Score calculated as: 50 
+The Score didn't improved since last 2
+CTCCAACAATA
+New Score calculated as: 50 
+The Score didn't improved since last 3
+CTACTAAACTA
+New Score calculated as: 51 
+The Score didn't improved since last 4
+TTGCTACAATA
+New Score calculated as: 51 
+The Score didn't improved since last 5
+TTATTAAAATA
+New Score calculated as: 51 
+The Score didn't improved since last 6
+TTACTTAAATA
+New Score calculated as: 50 
+The Score didn't improved since last 7
+TTACTAAAATA
+New Score calculated as: 55 
+The Score didn't improved since last 8
+CTATTAAAATA
+New Score calculated as: 53 
+The Score didn't improved since last 9
+ATGTTAATATA
+New Score calculated as: 52 
+The Score didn't improved since last 10
+ATGTAAACAGA
+New Score calculated as: 53 
+The Score didn't improved since last 11
+ATGCAAACAGA
+New Score calculated as: 54 
+The Score didn't improved since last 12
+ATGCCTACAGA
+New Score calculated as: 53 
+The Score didn't improved since last 13
+ATACCTACATA
+New Score calculated as: 50 
+The Score didn't improved since last 14
+ATACCTACATA
+New Score calculated as: 50 
+The Score didn't improved since last 15
+ATAACTACATA
+New Score calculated as: 51 
+The Score didn't improved since last 16
+ATACCTACATA
+New Score calculated as: 54 
+The Score didn't improved since last 17
+ATACCTACTCA
+New Score calculated as: 55 
+The Score didn't improved since last 18
+ATTCCTACACA
+New Score calculated as: 54 
+The Score didn't improved since last 19
+ATTCCTACCCA
+New Score calculated as: 52 
+The Score didn't improved since last 20
+ATGCCTACCCA
+New Score calculated as: 54 
+The Score didn't improved since last 21
+ATTGCTACCCA
+New Score calculated as: 50 
+The Score didn't improved since last 22
+ATTACTACCGA
+New Score calculated as: 55 
+The Score didn't improved since last 23
+CTTGCTACGGA
+New Score calculated as: 54 
+The Score didn't improved since last 24
+CTAGCTACGGC
+New Score calculated as: 54 
+The Score didn't improved since last 25
+CTAGCTACGGC
+New Score calculated as: 55 
+The Score didn't improved since last 26
+CTAACTACGCC
+New Score calculated as: 54 
+The Score didn't improved since last 27
+ATAACTACGTA
+New Score calculated as: 54 
+The Score didn't improved since last 28
+ATGCCTACGTA
+New Score calculated as: 53 
+The Score didn't improved since last 29
+ATGCCTACGGA
+New Score calculated as: 50 
+The Score didn't improved since last 30
+ATGCCTACCGA
+New Score calculated as: 48 
+The Score didn't improved since last 31
+ATAGCTACCGA
+[[0.45454545 0.09090909 0.45454545 0.27272727 0.18181818 0.27272727
+  0.54545455 0.18181818 0.18181818 0.09090909 0.72727273]
+ [0.36363636 0.09090909 0.09090909 0.27272727 0.36363636 0.09090909
+  0.45454545 0.72727273 0.36363636 0.09090909 0.27272727]
+ [0.09090909 0.27272727 0.54545455 0.27272727 0.27272727 0.09090909
+  0.09090909 0.09090909 0.27272727 0.63636364 0.09090909]
+ [0.27272727 0.72727273 0.09090909 0.36363636 0.36363636 0.72727273
+  0.09090909 0.18181818 0.36363636 0.36363636 0.09090909]]
+Consensus String: ATAGCTACCGA
+Score: 46
+-----------------
+Updated Motifs:
+-----------------
+cgagcaACCTA
+atAGGTACTGC
+TTAATTCccga
+atgcgaaccgc
+cggtctcctga
+ctgctaAAGTA
+atatttaccga
+cgggctccgga
+ttatatatata
+atgactcctta
+
+
+ATAGCTACCGA
+New Score calculated as: 48 
+The Score didn't improved since last 1
+ATAGCTACCGA
+New Score calculated as: 47 
+The Score didn't improved since last 2
+ATAGCTACCGA
+New Score calculated as: 46 
+The Score didn't improved since last 3
+ATACATACCGA
+New Score calculated as: 48 
+The Score didn't improved since last 4
+ATAGATACTTA
+New Score calculated as: 48 
+The Score didn't improved since last 5
+ATAGATACTTA
+New Score calculated as: 46 
+The Score didn't improved since last 6
+CTAGATACTTA
+New Score calculated as: 48 
+The Score didn't improved since last 7
+CTAGATACTTA
+New Score calculated as: 46 
+The Score didn't improved since last 8
+CTGCATACTTA
+New Score calculated as: 46 
+The Score didn't improved since last 9
+CTGCATACTTA
+New Score calculated as: 47 
+The Score didn't improved since last 10
+CTGCATACTTA
+New Score calculated as: 48 
+The Score didn't improved since last 11
+CGGCATACTTA
+New Score calculated as: 49 
+The Score didn't improved since last 12
+CGGCATACTTA
+New Score calculated as: 51 
+The Score didn't improved since last 13
+CTGCAAACTTC
+New Score calculated as: 52 
+The Score didn't improved since last 14
+CTACATACTTC
+New Score calculated as: 48 
+The Score didn't improved since last 15
+CTGGATACTTC
+New Score calculated as: 49 
+The Score didn't improved since last 16
+CTGGATACTTA
+New Score calculated as: 49 
+The Score didn't improved since last 17
+CTGGATCCTTA
+New Score calculated as: 50 
+The Score didn't improved since last 18
+CTGGAACCTTC
+New Score calculated as: 49 
+The Score didn't improved since last 19
+CGGCAACCTAA
+New Score calculated as: 53 
+The Score didn't improved since last 20
+CGGGCACCTAA
+New Score calculated as: 53 
+The Score didn't improved since last 21
+CGGCCACCTAA
+New Score calculated as: 54 
+The Score didn't improved since last 22
+CGGGCTACTAA
+New Score calculated as: 49 
+The Score didn't improved since last 23
+CGGGCAACTAA
+New Score calculated as: 49 
+The Score didn't improved since last 24
+CGGGCAACTAA
+New Score calculated as: 49 
+The Score didn't improved since last 25
+CGGGCAACTAA
+New Score calculated as: 49 
+The Score didn't improved since last 26
+CGGGCAATTAA
+[[0.09090909 0.09090909 0.18181818 0.09090909 0.36363636 0.54545455
+  0.45454545 0.09090909 0.09090909 0.63636364 0.45454545]
+ [0.63636364 0.18181818 0.18181818 0.45454545 0.63636364 0.09090909
+  0.36363636 0.45454545 0.27272727 0.09090909 0.36363636]
+ [0.27272727 0.63636364 0.72727273 0.45454545 0.09090909 0.18181818
+  0.27272727 0.09090909 0.27272727 0.09090909 0.27272727]
+ [0.18181818 0.27272727 0.09090909 0.18181818 0.09090909 0.36363636
+  0.09090909 0.54545455 0.54545455 0.36363636 0.09090909]]
+Consensus String: CGGGCAATTAA
+Score: 45
+-----------------
+Updated Motifs:
+-----------------
+GTAGCTACcta
+cgcccagtgag
+cggcagctctc
+ccgccagcaaa
+tggccaatgaa
+cgggctgctaA
+ctgcaaacttg
+cgggcacttac
+ccggctactaa
+GGGTAActtac
+
+
+CGGCCAACTAA
+New Score calculated as: 45 
+The Score didn't improved since last 1
+CGGCCAACTAA
+New Score calculated as: 46 
+The Score didn't improved since last 2
+CGGGCAACTAA
+New Score calculated as: 47 
+The Score didn't improved since last 3
+CGGGCAACTAA
+New Score calculated as: 48 
+The Score didn't improved since last 4
+CGGGCTGCTAA
+New Score calculated as: 52 
+The Score didn't improved since last 5
+CGGGCTACGTA
+New Score calculated as: 53 
+The Score didn't improved since last 6
+GGGGCTGCTAA
+New Score calculated as: 52 
+The Score didn't improved since last 7
+GGCGCTGCTAA
+New Score calculated as: 55 
+The Score didn't improved since last 8
+GGCGCTGCTAA
+New Score calculated as: 53 
+The Score didn't improved since last 9
+GGCGCTGCTAA
+New Score calculated as: 53 
+The Score didn't improved since last 10
+GGGTCTGCTAG
+New Score calculated as: 49 
+The Score didn't improved since last 11
+GGGTCTGCTAG
+New Score calculated as: 49 
+The Score didn't improved since last 12
+GGGTCTGCTAG
+New Score calculated as: 49 
+The Score didn't improved since last 13
+GGCTCTGCTAG
+New Score calculated as: 48 
+The Score didn't improved since last 14
+GGCTCTGCTAG
+New Score calculated as: 49 
+The Score didn't improved since last 15
+GCCTCTGCTAA
+New Score calculated as: 51 
+The Score didn't improved since last 16
+GCCTCTGCTAG
+New Score calculated as: 51 
+The Score didn't improved since last 17
+GCCTCGGCTAC
+New Score calculated as: 53 
+The Score didn't improved since last 18
+GCATCGGCTAT
+New Score calculated as: 52 
+The Score didn't improved since last 19
+GCATCGGCTAG
+New Score calculated as: 52 
+The Score didn't improved since last 20
+GCATAGGCTAT
+New Score calculated as: 49 
+The Score didn't improved since last 21
+GGATAGGCTAG
+New Score calculated as: 50 
+The Score didn't improved since last 22
+GGATAGGCTAT
+New Score calculated as: 48 
+The Score didn't improved since last 23
+GGATCGGCTAG
+New Score calculated as: 51 
+The Score didn't improved since last 24
+GGATAGGTTAG
+New Score calculated as: 52 
+The Score didn't improved since last 25
+GAATATGTTAT
+New Score calculated as: 52 
+The Score didn't improved since last 26
+GCATAGGTTAT
+New Score calculated as: 53 
+The Score didn't improved since last 27
+GCATCGGTTAT
+New Score calculated as: 52 
+The Score didn't improved since last 28
+GCATCGGCTAT
+New Score calculated as: 55 
+The Score didn't improved since last 29
+GCATGTGCTAT
+New Score calculated as: 54 
+The Score didn't improved since last 30
+GCATGGGCTAT
+New Score calculated as: 52 
+The Score didn't improved since last 31
+GAATAGGACAT
+New Score calculated as: 55 
+The Score didn't improved since last 32
+AAATAGGACAT
+New Score calculated as: 55 
+The Score didn't improved since last 33
+GCATAGGATAT
+New Score calculated as: 52 
+The Score didn't improved since last 34
+GCATGGGACAT
+New Score calculated as: 51 
+The Score didn't improved since last 35
+CCATAGGACAT
+New Score calculated as: 51 
+The Score didn't improved since last 36
+GCATAGGACAT
+New Score calculated as: 45 
+The Score didn't improved since last 37
+CCATAGGACAT
+[[0.18181818 0.18181818 0.72727273 0.36363636 0.45454545 0.09090909
+  0.18181818 0.72727273 0.18181818 0.81818182 0.09090909]
+ [0.45454545 0.54545455 0.09090909 0.09090909 0.27272727 0.27272727
+  0.18181818 0.09090909 0.63636364 0.09090909 0.27272727]
+ [0.45454545 0.27272727 0.09090909 0.18181818 0.27272727 0.45454545
+  0.63636364 0.09090909 0.09090909 0.09090909 0.27272727]
+ [0.09090909 0.18181818 0.27272727 0.54545455 0.18181818 0.36363636
+  0.18181818 0.27272727 0.27272727 0.18181818 0.54545455]]
+Consensus String: CCATAGGACAT
+Score: 44
+-----------------
+Updated Motifs:
+-----------------
+GCatgggatac
+gcataggacat
+ggaagtgtcag
+gttaaggtcgt
+ccataggacAG
+ctaatcaacat
+actaaggacat
+ggatctttatt
+cctgatcacat
+caatccgatac
+
+
+GCATAGGACAT
+[[0.18181818 0.18181818 0.63636364 0.36363636 0.54545455 0.09090909
+  0.09090909 0.63636364 0.18181818 0.72727273 0.09090909]
+ [0.36363636 0.54545455 0.09090909 0.09090909 0.27272727 0.18181818
+  0.18181818 0.09090909 0.63636364 0.09090909 0.27272727]
+ [0.54545455 0.27272727 0.09090909 0.18181818 0.27272727 0.54545455
+  0.72727273 0.09090909 0.09090909 0.18181818 0.27272727]
+ [0.09090909 0.18181818 0.36363636 0.54545455 0.09090909 0.36363636
+  0.18181818 0.36363636 0.27272727 0.18181818 0.54545455]]
+Consensus String: GCATAGGACAT
+Score: 43
+-----------------
+Updated Motifs:
+-----------------
+GCatgggatac
+gcataggacat
+ggaagtgtcag
+gttaaggtcgt
+ccataggacAG
+cctattgtcat
+actaaggacat
+ggatctttatt
+cctgatcacat
+caatccgatac
+
+
+GCATAGGACAT
+New Score calculated as: 43 
+The Score didn't improved since last 1
+GCATAGGACAT
+New Score calculated as: 44 
+The Score didn't improved since last 2
+CCAAAGGACAT
+New Score calculated as: 43 
+The Score didn't improved since last 3
+CCAAAGGACAT
+New Score calculated as: 43 
+The Score didn't improved since last 4
+CCAAAGGACAC
+[[0.18181818 0.27272727 0.72727273 0.45454545 0.36363636 0.09090909
+  0.09090909 0.72727273 0.09090909 0.81818182 0.09090909]
+ [0.54545455 0.45454545 0.18181818 0.09090909 0.27272727 0.27272727
+  0.09090909 0.09090909 0.72727273 0.09090909 0.45454545]
+ [0.36363636 0.36363636 0.09090909 0.09090909 0.36363636 0.63636364
+  0.72727273 0.18181818 0.09090909 0.18181818 0.36363636]
+ [0.09090909 0.09090909 0.18181818 0.54545455 0.18181818 0.18181818
+  0.27272727 0.18181818 0.27272727 0.09090909 0.27272727]]
+Consensus String: CCAAAGGACAC
+Score: 42
+-----------------
+Updated Motifs:
+-----------------
+GCatgggatac
+gcataggacat
+ggaagtgtcag
+caaatctACAC
+ccataggacAG
+ctaatcaacat
+actaaggacat
+cgcacgggcac
+CGATGGTACgg
+caatccgatac
+
+
+CCAAAGGACAC
+New Score calculated as: 42 
+The Score didn't improved since last 1
+CAAAAGGACAG
+New Score calculated as: 43 
+The Score didn't improved since last 2
+CCAAAGGACAG
+New Score calculated as: 44 
+The Score didn't improved since last 3
+CAAAAGGACAG
+New Score calculated as: 45 
+The Score didn't improved since last 4
+CCAAGGGACAG
+New Score calculated as: 47 
+The Score didn't improved since last 5
+CCATAGGACAG
+New Score calculated as: 48 
+The Score didn't improved since last 6
+CAAAACGACAG
+New Score calculated as: 46 
+The Score didn't improved since last 7
+CAAAACGACAT
+New Score calculated as: 47 
+The Score didn't improved since last 8
+CAAAGCGACAG
+New Score calculated as: 46 
+The Score didn't improved since last 9
+CAAAGCGACAG
+New Score calculated as: 48 
+The Score didn't improved since last 10
+CAAAGCAACAA
+New Score calculated as: 51 
+The Score didn't improved since last 11
+CAAAGCAACAT
+New Score calculated as: 50 
+The Score didn't improved since last 12
+CAAAGCAACAT
+New Score calculated as: 48 
+The Score didn't improved since last 13
+CAAAGCAACAT
+New Score calculated as: 49 
+The Score didn't improved since last 14
+CAAAGCAACAT
+New Score calculated as: 48 
+The Score didn't improved since last 15
+CAAAGCAACAT
+New Score calculated as: 50 
+The Score didn't improved since last 16
+CTAAGCAAAAT
+New Score calculated as: 53 
+The Score didn't improved since last 17
+CTAAGCAAAAT
+New Score calculated as: 50 
+The Score didn't improved since last 18
+CAAAGCAAAAT
+New Score calculated as: 51 
+The Score didn't improved since last 19
+CAAAGCAAAAT
+New Score calculated as: 51 
+The Score didn't improved since last 20
+CAAATCAAAAA
+New Score calculated as: 50 
+The Score didn't improved since last 21
+CAAATAAAAAA
+New Score calculated as: 51 
+The Score didn't improved since last 22
+CAAATAAAAAA
+New Score calculated as: 52 
+The Score didn't improved since last 23
+AAAATCAAAAA
+New Score calculated as: 56 
+The Score didn't improved since last 24
+ATAATGAAGAA
+New Score calculated as: 59 
+The Score didn't improved since last 25
+ATACTGAAGAA
+New Score calculated as: 56 
+The Score didn't improved since last 26
+ATATTGAAAAA
+New Score calculated as: 57 
+The Score didn't improved since last 27
+ATATGGGATAA
+New Score calculated as: 57 
+The Score didn't improved since last 28
+ATATGCGAAAA
+New Score calculated as: 58 
+The Score didn't improved since last 29
+AGATGCGAAAA
+New Score calculated as: 58 
+The Score didn't improved since last 30
+TGAAGCGAAAA
+New Score calculated as: 56 
+The Score didn't improved since last 31
+TGCAGGGAAAA
+New Score calculated as: 50 
+The Score didn't improved since last 32
+TGCTGGGAGAA
+New Score calculated as: 47 
+The Score didn't improved since last 33
+TGCTGGGATAA
+New Score calculated as: 46 
+The Score didn't improved since last 34
+TGCAGGGAAAA
+New Score calculated as: 50 
+The Score didn't improved since last 35
+TGCAGGGAGAT
+New Score calculated as: 48 
+The Score didn't improved since last 36
+TGCAGGGATAT
+New Score calculated as: 46 
+The Score didn't improved since last 37
+TGCAGCGAGAT
+New Score calculated as: 47 
+The Score didn't improved since last 38
+TGCAGCGAGTA
+New Score calculated as: 50 
+The Score didn't improved since last 39
+TGCAGGGAGAA
+New Score calculated as: 47 
+The Score didn't improved since last 40
+TGCAGGGAGAA
+New Score calculated as: 46 
+The Score didn't improved since last 41
+TGCAGCGATGA
+New Score calculated as: 45 
+The Score didn't improved since last 42
+TGCAGCGAGTA
+New Score calculated as: 46 
+The Score didn't improved since last 43
+TGCAGCGAGTT
+New Score calculated as: 44 
+The Score didn't improved since last 44
+TGCAGCGAGGA
+New Score calculated as: 45 
+The Score didn't improved since last 45
+TGCTGCGAGGA
+New Score calculated as: 44 
+The Score didn't improved since last 46
+TGCTGCGAGTT
+New Score calculated as: 44 
+The Score didn't improved since last 47
+TGCTGCGAGTT
+New Score calculated as: 44 
+The Score didn't improved since last 48
+TGCTGCGAGTT
+New Score calculated as: 44 
+The Score didn't improved since last 49
+TGCAGCGAGGT
+New Score calculated as: 49 
+The Score didn't improved since last 50
+
+---- Results ----
+
+Final Motifs:
+tggagggatgg
+tgcagggagag
+tgctgggattt
+tgaagcgagta
+tgccgccatga
+tactgcttcta
+agttgcctggt
+Agttgcgttca
+ttttggcagtt
+aaggggaatgg
+
+Consensus String:
+CCAAAGGACAC
+
+Final Score:
+42
+
+Enter your choice: 
+
+Terminated

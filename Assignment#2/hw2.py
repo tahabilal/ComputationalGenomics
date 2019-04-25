@@ -1,8 +1,17 @@
 from random import randint
-import numpy as np 
+import numpy as np
+import sys
+
+'''
+# write output to txt file
+orig_stdout = sys.stdout
+f = open('out.txt', 'w')
+sys.stdout = f
+'''
 
 # We take an input file name 
 input_text = input("Enter a file: ")
+# print(input_text + '\n')
 # If no input file name is given execute the dna_sample.txt file in the project directory
 if len(input_text) < 1 : input_text = "dna_sample.txt"
 try:
@@ -16,6 +25,8 @@ Text = Text.read().split()
 
 # We ask for a number for the k value. Which is the number of mers.
 k = int(input("Enter k: "))
+# print(str(k) + '\n')
+
 
 # random_motif function returns a array of random motifs
 def random_motif(a):
@@ -27,17 +38,20 @@ def random_motif(a):
         motifs.append(Text[i][y:y+a])
     return motifs
 
+
 # this function executes random motif search algorithm on given randomMotifs and motif length (a)
 def randomized_motif_search(randomMotif,a): 
     # first create empty arrays for each nucleotide
     A, C, G, T = [], [], [], []
     consensus = ""
-    transpose_motif = [""]*a
+    transpose_motif = [""]*a  # for easy build consensus string
 
+    # search all character in motifs
+    # construct count and profile matrix
     for j in range(a):
         countA, countC, countG, countT = 0, 0, 0, 0
         for i in range(10):
-            transpose_motif[j] += randomMotif[i][j]
+            transpose_motif[j] += randomMotif[i][j] # create transpose of motifs
             if randomMotif[i][j] == "A" or randomMotif[i][j] == "a":
                 countA = countA + 1
             if randomMotif[i][j] == "C" or randomMotif[i][j] == "c":
@@ -46,6 +60,7 @@ def randomized_motif_search(randomMotif,a):
                 countG = countG + 1
             if randomMotif[i][j] == "T" or randomMotif[i][j] == "t":
                 countT = countT + 1
+        # calculate consensus string taken information in motifs
         if countA >= max(countC, countG, countT):
             consensus = consensus + "A"
         elif countC >= max(countA, countG, countT):
@@ -54,19 +69,21 @@ def randomized_motif_search(randomMotif,a):
             consensus = consensus + "G"
         elif countT >= max(countA, countC, countG):
             consensus = consensus + "T"
-    
+
+        # construct count matrix when search and take all values
         A.append(countA)
         C.append(countC)
         G.append(countG)
         T.append(countT)
 
     count_matrix = np.array([ A,C,G,T ])
-    score = calculate_score(transpose_motif, consensus,a)
-    profile_matrix = np.true_divide(count_matrix, len(A))
-    updated_motifs = calculate_new_motifs(profile_matrix, Text, a)
+    score = calculate_score(transpose_motif, consensus,a) # update score
+    profile_matrix = np.true_divide(count_matrix, len(A)) # update profile
+    updated_motifs = calculate_new_motifs(profile_matrix, Text, a) # update motifs
     return count_matrix, score, profile_matrix, updated_motifs, consensus
 
 
+# travel all motifs and calculate score as a difference between strings
 def calculate_score(transpose_motif, consensus,a):
     score = 0
     for j in range(a):
@@ -76,6 +93,9 @@ def calculate_score(transpose_motif, consensus,a):
     return score
 
 
+# Find all motifs in DNA and calculate all motifs' score
+# Then take motif that the most probality of motif in DNA
+# These operation repeat for given 10 DNAs string
 def calculate_new_motifs(profile_matrix, Text,a):
     patterns = []
     patterns_score = []
@@ -116,7 +136,10 @@ def calculate_new_motifs(profile_matrix, Text,a):
     return updated_motifs
 
 
-def calculate_new_motifs_gibbs(profile_matrix, Text, index, randomMotif,a):  # new method for gibbs sampler
+# Find all motifs in DNA and calculate all motifs' score
+# Then randomly selects one motif by its probability
+# Only difference from randomized motif search is to take one motif from choosen DNA
+def calculate_new_motifs_gibbs(profile_matrix, Text, index, randomMotif,a):
     patterns = []
     patterns_score = []
     pattern_score = 1
@@ -148,7 +171,9 @@ def calculate_new_motifs_gibbs(profile_matrix, Text, index, randomMotif,a):  # n
     return updated_motifs
 
 
-def construct_consensus(randomMotif,a):  # new method for gibbs sampler
+# Construct consensus string by the current motifs
+# We use same search and score algotithm which in above functions
+def construct_consensus(randomMotif, a):
     consensus = ""
     transpose_motif = [""]*a
     for j in range(a):
@@ -173,18 +198,20 @@ def construct_consensus(randomMotif,a):  # new method for gibbs sampler
             consensus = consensus + "T"
     return consensus, transpose_motif
 
-
-def gibbs_sampler(randomMotif,a):  # new method for gibbs sampler
+# this function executes gibbs sampler algorithm on given randomMotifs and motif length (a)
+def gibbs_sampler(randomMotif,a):
     A, C, G, T = [], [], [], []
     index = randint(0, 9)
-    consensus, transpose_motif = construct_consensus(randomMotif,a)
+    consensus, transpose_motif = construct_consensus(randomMotif,a)  # new consensus string
     print(consensus)
     score = calculate_score(transpose_motif, consensus,a)
 
+    # search all character in motifs
+    # construct count and profile matrix
     for j in range(a):
         countA, countC, countG, countT = 0, 0, 0, 0
         for i in range(10):
-            if i == index:  # remove one motif as a random (check line 165)
+            if i == index:  # remove one motif as a random
                 continue
             if randomMotif[i][j] == "A" or randomMotif[i][j] == "a":
                 countA = countA + 1
@@ -194,6 +221,8 @@ def gibbs_sampler(randomMotif,a):  # new method for gibbs sampler
                 countG = countG + 1
             if randomMotif[i][j] == "T" or randomMotif[i][j] == "t":
                 countT = countT + 1
+
+        # add one all count values
         A.append(countA+1)
         C.append(countC+1)
         G.append(countG+1)
@@ -205,7 +234,10 @@ def gibbs_sampler(randomMotif,a):  # new method for gibbs sampler
     return count_matrix, score, profile_matrix, updated_motifs, consensus
 
 
-def exp1():
+# check the score every iteration
+# If new score less than previous score
+# algorithm is stoped
+def exp1():  # randimized motif search test function
     best_score = 10000
     iteration = 0
     randomMotifs = random_motif(k)
@@ -235,7 +267,10 @@ def exp1():
             break
 
 
-def exp2():  # new method for gibbs sampler
+# check the score every 50 iterations.
+# If we see that the score remains the same for the last 50 iterations,
+# then we stop the algorithm
+def exp2():  # gibss sampler test function
     randomMotifs = random_motif(k)
     print(randomMotifs)
     count_non_improve = 0
@@ -260,7 +295,7 @@ def exp2():  # new method for gibbs sampler
             count_non_improve = 0
         else:
             print("New Score calculated as: {} ".format(score))
-            print("The Score didn't improved since last {}".format(count_non_improve))
+            print("The Score didn't improved since last {}".format(count_non_improve + 1))
             count_non_improve = count_non_improve +1
             if count_non_improve == 50:
                 break
@@ -277,6 +312,7 @@ def exp2():  # new method for gibbs sampler
 def main():
     print("Menu\n1-Randomized Motif Search\n2-Gibbs Sampler\n")
     case = input("Enter your choice: ")
+    # print(str(case) + '\n')
     while 1:
         if case == "1":
             exp1()
@@ -286,10 +322,16 @@ def main():
             print("Terminated")
             exit(0)
         case = input("\nEnter your choice: ")
+        # print(str(case) + '\n')
 
 
 if __name__ == "__main__":
     main()
+    '''
+    sys.stdout = orig_stdout
+    f.close()
+    '''
+
 
 
    
